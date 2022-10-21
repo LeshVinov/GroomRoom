@@ -22,6 +22,25 @@
         z-index: 1
         max-width: 650px
         padding-bottom: 150px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 70px
+            height: 70px
+            top: 30%
+            left: -40%
+            background: url('../img/arrow-left.svg') no-repeat center
+            cursor: pointer
+        &::after
+            content: ''
+            position: absolute
+            width: 70px
+            height: 70px
+            top: 30%
+            right: -40%
+            background: url('../img/arrow-right.svg') no-repeat center
+            cursor: pointer
         &__title
             text-align: center
             color: $orange

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ГрумRoom</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="./index.html" class="header__link"><img src="./logo/logo__groom.png" alt="Наггетс" class="header__logo">Грум<!-- <span class="header__logo--orange">Room</span> -->Room</a>
+                <div class="header-nav">
+                    <a href="./index.html" class="header-nav__item">Главная</a>
+                    <a href="./user.html" class="header-nav__item">Личный кабинет</a>
+                </div>
+                <!-- /.header-nav -->
+            </div>
+            <!-- /.header-content -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <main>
+        <section class="reg">
+            <div class="container reg-content">
+                <form action="#" class="form">
+                    <div class="form-name">
+                        <span class="form-name__title">ФИО</span>
+                        <div class="form-group">
+                            <input type="text" class="form__input form__name" placeholder="Имя" name="regform-name">
+                            <input type="text" class="form__input form__secname" placeholder="Фамилия" name="regform-secName">
+                        </div>
+                        <!-- /.form-group -->
+                        <input type="text" class="form__input form__thirdname" placeholder="Отчество" name="regform-thirdName">
+                    </div>
+                    <!-- /.form-name -->
+                    <div class="form-login">
+                        <label class="form-login__span" for="regFormLogin">Логин</label>
+                        <input type="email" id="regFormLogin" class="form__input form__login" placeholder="Логин" name="regform-login">
+                    </div>
+                    <!-- /.form-login -->
+                    <div class="form-email">
+                        <label class="form-email__span" for="regFormEmail">Email</label>
+                        <input type="email" id="regFormEmail" class="form__input form__email" placeholder="Email" name="regform-email">
+                    </div>
+                    <!-- /.form-email -->
+                    <div class="form-password">
+                        <span class="form-email__span">Пароль</span>
+                        <input type="text" class="form__input form__password" name="regform-password" placeholder="Введите пароль">
+                        <input type="text" class="form__input form__password" placeholder="Повторите пароль">
+                    </div>
+                    <!-- /.form-password -->
+                    <div class="form-checkbox">
+                        <input type="checkbox" name="regform-checkbox" id="regFormcheckbox" class="form-checkbox__checkbox" checked>
+                        <label for="regFormcheckbox" class="form-checkbox__text">Я соглашаюсь с обработкой данных</label>
+                    </div>
+                    <!-- /.form-checkbox -->
+                    <button class="button button--primary form__button">Зарегистрироваться</button>
+                </form>
+                <!-- /.form -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.form -->
+    </main>
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
     <title>ГрумRoom</title>
 </head>
 <body>
@@ -15,12 +16,12 @@
                 <div class="header-nav">
                     <a href="#hero" class="header-nav__item">О нас</a>
                     <a href="#request" class="header-nav__item">Заявки</a>
-                    <a href="#" class="header-nav__item">Личный кабинет</a>
+                    <a href="./user.html" class="header-nav__item">Личный кабинет</a>
                 </div>
                 <!-- /.header-nav -->
                 <div class="header-log">
-                    <button class="button button--primary header-log__button">Войти</button>
-                    <button class="button button--secondary header-log__button">Зарегистрироваться</button>
+                    <button class="button button--primary header-log__button button-signIn">Войти</button>
+                    <a href="./register.html"><button class="button button--secondary header-log__button">Зарегистрироваться</button></a>
                 </div>
                 <!-- /.header-log -->
             </div>
@@ -53,34 +54,101 @@
                     <div class="request-list">
                             <div class="card">
                                 <img src="./img/1 (1).jpg" alt="Фото питомца" class="card__img">
-                                <p class="card__name">Кличко</p>
-                                <p class="card__category">"Царская" стрижка</p>
+                               <div class="card-desc">
+                                    <div class="card-group">
+                                        <span class="card-group__title">Имя питомца:</span>
+                                        <p class="card-group__subtitle">Боня</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                                   <div class="card-group">
+                                       <span class="card-group__title">Временная метка:</span>
+                                       <p class="card-group__subtitle">22.12.2022</p>
+                                   </div>
+                                   <!-- /.card-group -->
+                                    <div class="card-group">
+                                        <span class="card-group__title">Категория заявки:</span>
+                                        <p class="card-group__subtitle">Выполнено</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                               </div>
+                               <!-- /.card-desc -->
                             </div>
                             <!-- /.card -->
                             <div class="card">
                                 <img src="./img/2 (1).jpg" alt="Фото питомца" class="card__img">
-                                <p class="card__name">Боня</p>
-                                <p class="card__category">"Под ноль"</p>
+                               <div class="card-desc">
+                                    <div class="card-group">
+                                        <span class="card-group__title">Имя питомца:</span>
+                                        <p class="card-group__subtitle">Круасанчик</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                                   <div class="card-group">
+                                       <span class="card-group__title">Временная метка:</span>
+                                       <p class="card-group__subtitle">22.12.2022</p>
+                                   </div>
+                                   <!-- /.card-group -->
+                                    <div class="card-group">
+                                        <span class="card-group__title">Категория заявки:</span>
+                                        <p class="card-group__subtitle">В работе</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                               </div>
+                               <!-- /.card-desc -->
                             </div>
                             <!-- /.card -->
                             <div class="card">
                                 <img src="./img/3 (1).jpg" alt="Фото питомца" class="card__img">
-                                <p class="card__name">Счастье</p>
-                                <p class="card__category">Покрас когтей</p>
+                               <div class="card-desc">
+                                    <div class="card-group">
+                                        <span class="card-group__title">Имя питомца:</span>
+                                        <p class="card-group__subtitle">Счастье</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                                   <div class="card-group">
+                                       <span class="card-group__title">Временная метка:</span>
+                                       <p class="card-group__subtitle">22.12.2022</p>
+                                   </div>
+                                   <!-- /.card-group -->
+                                    <div class="card-group">
+                                        <span class="card-group__title">Категория заявки:</span>
+                                        <p class="card-group__subtitle">Выполнено</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                               </div>
+                               <!-- /.card-desc -->
                             </div>
                             <!-- /.card -->
                             <div class="card">
                                 <img src="./img/4 (1).jpg" alt="Фото питомца" class="card__img">
-                                <p class="card__name">Облачко</p>
-                                <p class="card__category">Стрижка</p>
+                               <div class="card-desc">
+                                    <div class="card-group">
+                                        <span class="card-group__title">Имя питомца:</span>
+                                        <p class="card-group__subtitle">Облачко</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                                   <div class="card-group">
+                                       <span class="card-group__title">Временная метка:</span>
+                                       <p class="card-group__subtitle">22.12.2022</p>
+                                   </div>
+                                   <!-- /.card-group -->
+                                    <div class="card-group">
+                                        <span class="card-group__title">Категория заявки:</span>
+                                        <p class="card-group__subtitle">В работе</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                               </div>
+                               <!-- /.card-desc -->
                             </div>
                             <!-- /.card -->
-                            
                     </div>
                     <!-- /.request-list -->
                     <button class="button button--primary request__button">Подать заявку</button>
                 </div>
                 <!-- /.request-content -->
+                <div class="request-count">
+                    <!--  -->
+                </div>
+                <!-- /.request-count -->
             </div>
             <!-- /.container -->
         </section>
@@ -94,7 +162,7 @@
                     <div class="header-nav">
                         <a href="#hero" class="header-nav__item">О нас</a>
                         <a href="#request" class="header-nav__item">Заявки</a>
-                        <a href="#" class="header-nav__item">Личный кабинет</a>
+                        <a href="./register.html" class="header-nav__item">Личный кабинет</a>
                     </div>
                     <!-- /.header-nav -->
                 </div>
@@ -105,5 +173,23 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+            <form action="#" class="form">
+                <img src="./img/corss.png" alt="Крест" class="cross">
+                <div class="form-login">
+                    <label class="form-login__span" for="signInFormLogin">Логин</label>
+                    <input type="email" id="signInFormLogin" class="form__input form__login" placeholder="Логин" name="regform-login">
+                </div>
+                <!-- /.form-login -->
+                <div class="form-password">
+                    <label class="form-email__span" for="signInFormPas">Пароль</label>
+                    <input type="text" class="form__input form__password" name="regform-password" id="signInFormPas" placeholder="Введите пароль">
+                </div>
+                <!-- /.form-password -->
+                <button class="button button--primary form__button">Войти</button>
+            </form>
+            <!-- /.form -->
+    </div>
+    <!-- /.signIn -->
 </body>
 </html>
