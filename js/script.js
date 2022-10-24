@@ -13,6 +13,12 @@ const removeOfModal = function(event) {
     }
 }
 
-buttonClosed.addEventListener('click', toggleModal)
-buttonOpened.addEventListener('click', toggleModal)
-buttonRequestAdd.addEventListener('click', toggleModal)
+if (buttonClosed) {
+    buttonClosed.addEventListener('click', toggleModal)
+}
+if (buttonOpened) {
+    buttonOpened.addEventListener('click', toggleModal)
+}
+if (buttonRequestAdd) {
+    buttonRequestAdd.addEventListener('click', toggleModal)
+}
