@@ -640,4 +640,94 @@ h1, h2, h3 {
 .user .card-group__subtitle {
   color: #161616;
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-nav {
+    margin-bottom: 20px;
+  }
+  .header-nav__item:last-of-type {
+    margin-right: 0;
+  }
+  .header .button-signUp {
+    margin-right: 0;
+  }
+  .hero {
+    padding-top: 60px;
+  }
+  .hero-text {
+    padding-bottom: 60px;
+  }
+  .hero-text::before {
+    display: none;
+  }
+  .hero-text::after {
+    display: none;
+  }
+  .hero-text__desc {
+    font-size: 17px;
+  }
+  .request .card {
+    max-width: 315px;
+    margin-right: 0;
+  }
+  .request .card:nth-of-type(3) {
+    margin-bottom: 30px;
+  }
+  .request .card__img {
+    max-width: 270px;
+  }
+  .modal .form {
+    left: 0;
+  }
+  .reg {
+    padding: 55px 0;
+  }
+  .reg .form {
+    max-width: 395px;
+  }
+  .reg .form-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reg .form__name {
+    margin-right: 0;
+    width: 100%;
+  }
+  .reg .form__secname {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .user-content {
+    padding: 50px 25px;
+  }
+  .user-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user__img {
+    margin-right: 0;
+  }
+  .user .card__img {
+    max-width: 270px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
