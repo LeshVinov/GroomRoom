@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>ГрумRoom</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="./index.html" class="header__link"><img src="./logo/logo__groom.png" alt="Наггетс" class="header__logo">Грум<!-- <span class="header__logo--orange">Room</span> -->Room</a>
+                <div class="header-nav">
+                    <a href="./index.html" class="header-nav__item">Главная</a>
+                    <a href="./index.html" class="header-nav__item"><button class="button button--primary header-log__button">Выйти</button></a>
+                </div>
+                <!-- /.header-nav -->
+            </div>
+            <!-- /.header-content -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <main>
+        <div class="user">
+            <div class="container">
+                <div class="user-content">
+                    <div class="user-top">
+                        <img src="./img/60 1 (2).jpg" alt="Фото пользователя" class="user__img">
+                        <div class="user-text">
+                            <div class="user-top__name">
+                                <span class="user-name-full">ФИО:</span>
+                                <div class="user-data">
+                                    <p class="user-data__item user-name__sec-name">Корнев</p>
+                                    <p class="user-data__item user-name__first-name">Иван</p>
+                                    <p class="user-data__item user-name__third-name">Евгеньевич</p>
+                                </div>
+                                <!-- /.user-name -->
+                            </div>
+                            <!-- /.user-top__name -->
+                            <div class="user-top__email">
+                                <span class="user-name-full">E-mail:</span>
+                                <div class="user-data">
+                                    <p class="user-data__item user-name__first-name">ivan2200@mail.ru</p>
+                                </div>
+                                <!-- /.user-name -->
+                            </div>
+                            <!-- /.user-top__email -->
+                        </div>
+                        <!-- /.user-text -->
+                    </div>
+                    <!-- /.user-top -->
+                    <button class="button button--primary user__button">Создать заявку</button>
+                    <div class="user-middle">
+                        <h2 class="user-middle__title">Ваши заявки:</h2>
+                        <div class="user-middle-cards">
+                            <div class="card">
+                                <img src="./img/1 (1).jpg" alt="Фото питомца" class="card__img">
+                               <div class="card-desc">
+                                    <div class="card-group">
+                                        <span class="card-group__title">Имя питомца:</span>
+                                        <p class="card-group__subtitle">Боня</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                                   <div class="card-group">
+                                       <span class="card-group__title">Временная метка:</span>
+                                       <p class="card-group__subtitle">22.12.2022</p>
+                                   </div>
+                                   <!-- /.card-group -->
+                                    <div class="card-group">
+                                        <span class="card-group__title">Категория заявки:</span>
+                                        <p class="card-group__subtitle">Выполнено</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                               </div>
+                               <!-- /.card-desc -->
+                            </div>
+                            <!-- /.card -->
+                            <div class="card">
+                                <img src="./img/4 (1).jpg" alt="Фото питомца" class="card__img">
+                               <div class="card-desc">
+                                    <div class="card-group">
+                                        <span class="card-group__title">Имя питомца:</span>
+                                        <p class="card-group__subtitle">Облачко</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                                   <div class="card-group">
+                                       <span class="card-group__title">Временная метка:</span>
+                                       <p class="card-group__subtitle">22.12.2022</p>
+                                   </div>
+                                   <!-- /.card-group -->
+                                    <div class="card-group">
+                                        <span class="card-group__title">Категория заявки:</span>
+                                        <p class="card-group__subtitle">В работе</p>
+                                    </div>
+                                    <!-- /.card-group -->
+                               </div>
+                               <!-- /.card-desc -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.user-middle-cards -->
+                    </div>
+                    <!-- /.user-middle -->
+                    <div class="user-bottom">
+                        <button class="button button--primary user-bottom__button">Убрать заявку</button>
+                    </div>
+                    <!-- /.user-bottom -->
+                </div>
+                <!-- /.user-content -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.user -->
+        <div class="modal">
+            <form action="#" class="form">
+                <img src="./img/corss.png" alt="Крест" class="cross">
+                <div class="form-login">
+                    <label class="form-login__span" for="requestFormName">Имя питомца</label>
+                    <input type="email" id="requestFormName" class="form__input form__login" placeholder="Имя" name="request-name">
+                </div>
+                <!-- /.form-login -->
+                <div class="form-password">
+                    <label class="form-email__span" for="requestFormDesc">Описание работ</label>
+                    <input type="text" class="form__input form__desc" name="regform-password" id="requestFormDesc" placeholder="Описание">
+                </div>
+                <!-- /.form-password -->
+                <div class="form-img">
+                    <label class="form-email__span" for="requestFormDesc">Фото питомца: </label>
+                    <input type="file" class="form__input form__photo" name="regform-password" id="requestFormDesc" placeholder="Описание">
+                </div>
+                <!-- /.form-password -->
+                <button class="button button--primary form__button">Отправить заявку</button>
+            </form>
+            <!-- /.form -->
+    </div>
+    <!-- /.modal -->
+    </main>
+</body>
+</html>
